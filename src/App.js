@@ -1,10 +1,17 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 
+import { GlobalStyled } from "./style.js"
+import Header from "./common/header"
 function App() {
   return (
-    <div className="dell">
-        hello world 
-    </div>
+    <Fragment>      
+      <GlobalStyled />
+      <Header />
+      <div className="dell">
+          hello world 
+      </div>
+    
+    </Fragment>
   );
 }
 
